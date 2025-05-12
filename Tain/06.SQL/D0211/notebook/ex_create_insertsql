@@ -1,0 +1,23 @@
+# 다시 확인하기
+use sqlclass_db;
+drop table if exists favorite_food;
+create table favorite_food
+(person_id smallint unsigned auto_increment,
+food varchar(20),
+primary key(person_id, food),
+foreign key(person_id) 
+references person(person_id)
+);
+
+
+insert favorite_food (person_id,food)
+values (1,'pizza');
+insert favorite_food (person_id,food)
+values(1,'cookies');
+insert favorite_food (person_id,food)
+values(1,'nachos');
+insert into favorite_food (person_id,food)
+values(3,'lasagna');
+select * from favorite_food;
+-- order by food desc;
+-- SHOW CREATE TABLE favorite_food

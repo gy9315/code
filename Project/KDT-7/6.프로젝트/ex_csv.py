@@ -1,0 +1,10 @@
+import pandas as pd
+n1=pd.read_csv('./DATA/1.csv',encoding='euc-kr')
+n2=pd.read_csv('./DATA/2.csv',encoding='euc-kr')
+n3=pd.read_csv('./DATA/3.csv',encoding='euc-kr')
+n4=pd.read_csv('./DATA/4.csv',encoding='euc-kr')
+n5=pd.read_csv('./DATA/5.csv',encoding='euc-kr')
+n6=pd.read_csv('./DATA/temperature.csv',encoding='euc-kr')
+csv=pd.concat([n1,n2,n3,n4,n5,n6],ignore_index=True)
+print(csv)
+csv.to_csv('temperature_total.csv',encoding='utf-8-sig')

@@ -1,0 +1,16 @@
+num=range(10,0,-1)
+print(list(num))
+str1='Hello'
+str_tuple=tuple(str1)
+str_list=list(str1)
+list=['1','2','3','4']
+list=[1,2,3,4]
+print(str_tuple)
+print(str_list)
+print(str(list))
+x=[1,2,3]
+a,b,c=x
+print(x.__getitem__(1))
+print(a+b+c)
+hello='안녕하세요'
+print(len(hello.encode('utf-8')))

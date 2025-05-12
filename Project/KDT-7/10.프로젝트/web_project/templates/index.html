@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 예측</title>
+</head>
+<body>
+    <h1>당신의 연령대가 어떻게 될까?</h1>
+    <form method="POST">
+        <label for="text">입력:</label>
+        <input type="text" id="text" name="text" required>
+        <input type="submit" value="예측">
+    </form>
+
+    {% if prediction is not none %}
+        <h2>당신의 연세: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>

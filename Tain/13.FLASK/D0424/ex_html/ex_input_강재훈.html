@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <h3 style="margin-left:90px;">회원가입</h3><hr width="250" style="margin-left:0;">
+
+    <!-- 입력 값 서버 전송 역할 태그 form -->
+    <!-- 속성 method : 서버로 전송 방식 -->
+    <!--     action : 값들 전달받아 처리할 서버의 프로그램/URL 지정 --> 
+    <form method="post" action="URL">
+        <label for="'name">이&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;름:</label>
+        <input type="text" id="'name" required><br>
+        <label for="id">아&nbsp;&nbsp;이&nbsp;&nbsp;디:</label>
+        <input type="text" id="id" required>
+        <br>
+        <label for="pw">비밀번호:</label>
+        <input type="password" id="pw">
+        <br>
+        <label for="'mail">메일주소:</label>
+        <input type="email" id="mail"><br>
+        <label for="birth">생년월일:</label>
+        <input type="date" id="birth"><br><br>
+        <label for="hobby">취미생활 [모두선택]</label><br>
+        <input type="checkbox" name="hobby">게임 
+        <input type="checkbox" name="hobby">코딩 
+        <input type="checkbox" name="hobby">영화감상<br><br>
+        <label for="hobby">관심분야 [모두선택]</label><br>
+        <input type="checkbox" name="interest">딥러닝 
+        <input type="checkbox" name="interest">분석
+        <input type="checkbox" name="interest">기획
+        <input type="checkbox" name="interest">기술영업
+        <br><br>
+        <!-- 클릭하면 입력 값들이 서버로 전송 -->
+        <input style="background-color:cornflowerblue ; color:white; margin-left: 180px; padding:5px 20px; font-size:20px"  type="submit" value="가입" size="100">
+    </form>
+    <br><br><br>
+</body>
+
+</html>
